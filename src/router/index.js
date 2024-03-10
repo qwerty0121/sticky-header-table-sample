@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import GridTableView from "../views/GridTableView.vue";
 import SubGridTableView from "../views/SubGridTableView.vue";
+import TableView from "@/views/TableView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,14 @@ const router = createRouter({
       component: SubGridTableView,
       meta: {
         viewName: "SubGridTable",
+      },
+    },
+    {
+      path: "/table",
+      name: "table",
+      component: TableView,
+      meta: {
+        viewName: "Table",
       },
     },
   ],
