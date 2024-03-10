@@ -1,8 +1,18 @@
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const routes = router.getRoutes().filter((route) => route.meta.viewName);
+console.log(routes);
+</script>
+
 <template>
   <header>
     <nav class="navigator">
-      <RouterLink to="/grid-table">GridTable</RouterLink>
-      <RouterLink to="/sub-grid-table">SubGridTable</RouterLink>
+      <template v-for="route in routes">
+        <RouterLink :to="route.path">{{ route.meta.viewName }}</RouterLink>
+      </template>
     </nav>
   </header>
 </template>

@@ -12,11 +12,17 @@ const router = createRouter({
       path: "/grid-table",
       name: "grid-table",
       component: GridTableView,
+      meta: {
+        viewName: "GridTable",
+      },
     },
     {
       path: "/sub-grid-table",
       name: "sub-grid-table",
       component: SubGridTableView,
+      meta: {
+        viewName: "SubGridTable",
+      },
     },
   ],
 });
