@@ -4,7 +4,6 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const routes = router.getRoutes().filter((route) => route.meta.viewName);
-console.log(routes);
 </script>
 
 <template>
