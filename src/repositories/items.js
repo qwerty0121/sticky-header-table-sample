@@ -22,4 +22,5 @@ export const items = [...Array(100)].map((_, i) => ({
   customerName: "顧客名",
   picName: "本社担当A",
   branchPicName: "支店担当B",
+  warn: i % 5 === 1,
 }));

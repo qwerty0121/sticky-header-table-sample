@@ -10,7 +10,9 @@ import { schema, items } from "../repositories/items";
       </template>
       <template v-for="item in items">
         <template v-for="key in Object.keys(schema)">
-          <div class="cell cell--body">{{ item[key] }}</div>
+          <div class="cell cell--body" :class="{ 'cell--warn': item.warn }">
+            {{ item[key] }}
+          </div>
         </template>
       </template>
     </div>
@@ -65,5 +67,9 @@ import { schema, items } from "../repositories/items";
 
 .cell--body {
   background-color: lightgray;
+}
+
+.cell--warn {
+  background-color: #99ff99;
 }
 </style>
