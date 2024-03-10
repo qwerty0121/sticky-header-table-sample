@@ -30,23 +30,23 @@ import { schema, items } from "../repositories/items";
   grid-template-columns:
     /* ステータス */
     minmax(70px, 2fr)
-    /* 送受信日 */
+    /* 登録日 */
     minmax(70px, 2fr)
-    /* 回答希望日 */
+    /* 対応希望日 */
     minmax(70px, 2fr)
-    /* 締切日 */
+    /* 期限日 */
     minmax(70px, 2fr)
-    /* 種別 */
+    /* カテゴリ */
     minmax(70px, 2fr)
-    /* 件名 */
+    /* タイトル */
     minmax(150px, 3fr)
     /* メモ */
     minmax(150px, 3fr)
-    /* お客様 */
+    /* 顧客名 */
     minmax(150px, 3fr)
-    /* 営業担当 */
+    /* 本社担当 */
     minmax(150px, 3fr)
-    /* 代理店担当 */
+    /* 支店担当 */
     minmax(150px, 3fr);
 }
 

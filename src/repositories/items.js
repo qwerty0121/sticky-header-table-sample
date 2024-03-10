@@ -1,14 +1,14 @@
 export const schema = {
   status: { name: "ステータス" },
-  createDate: { name: "送受信日" },
-  responseDate: { name: "回答希望日" },
-  deadlineDate: { name: "締切日" },
-  category: { name: "種別" },
-  subject: { name: "件名" },
+  createDate: { name: "登録日" },
+  responseDate: { name: "対応希望日" },
+  deadlineDate: { name: "期限日" },
+  category: { name: "カテゴリ" },
+  subject: { name: "タイトル" },
   memo: { name: "メモ" },
-  customerName: { name: "お客様" },
-  picName: { name: "営業担当" },
-  agencyName: { name: "代理店担当" },
+  customerName: { name: "顧客名" },
+  picName: { name: "本社担当" },
+  branchPicName: { name: "支店担当" },
 };
 
 export const items = [...Array(100)].map((_, i) => ({
@@ -16,10 +16,10 @@ export const items = [...Array(100)].map((_, i) => ({
   createDate: "10/15",
   responseDate: "10/20",
   deadlineDate: "10/30",
-  category: "火災",
-  subject: `テスト件名 ${i + 1}`,
+  category: "購入",
+  subject: `テストタイトル ${i + 1}`,
   memo: "テストメモ",
-  customerName: "お客様",
-  picName: "営業担当A",
-  agencyName: "代理店B",
+  customerName: "顧客名",
+  picName: "本社担当A",
+  branchPicName: "支店担当B",
 }));
