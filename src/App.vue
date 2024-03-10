@@ -1,8 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Header from "./components/Header.vue";
-import ScaleSwitch from "./components/ScaleSwitch.vue";
-import { useScale } from "./composables/useScale";
+import Header from "@/components/Header.vue";
+import ScaleSwitch from "@/components/ScaleSwitch.vue";
+import { useScale } from "@/composables/useScale";
 
 const scale = useScale();
 </script>

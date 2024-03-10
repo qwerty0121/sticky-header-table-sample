@@ -1,5 +1,5 @@
 <script setup>
-import { schema, items } from "../repositories/items";
+import { schema, items } from "@/repositories/items";
 </script>
 
 <template>

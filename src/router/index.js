@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import GridTableView from "../views/GridTableView.vue";
-import SubGridTableView from "../views/SubGridTableView.vue";
+import GridTableView from "@/views/GridTableView.vue";
+import SubGridTableView from "@/views/SubGridTableView.vue";
 import TableView from "@/views/TableView.vue";
 
 const router = createRouter({
